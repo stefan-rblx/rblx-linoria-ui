@@ -3069,7 +3069,7 @@ function library:CreateWindow(name, hidebutton)
                 return dropdown
             end
             function sector:AddSeperator(text)
-                local seperator = { }
+                local seperator = {}
                 seperator.text = text or ""
                 seperator.main = Instance.new("Frame", sector.Items)
                 seperator.main.Name = "Main"
