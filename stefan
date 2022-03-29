@@ -734,7 +734,7 @@ function library:CreateWindow(name, hidebutton)
                 toggle.value = toggle.default
                 toggle.Main = Instance.new("TextButton", sector.Items)
                 toggle.Main.Name = "toggle"
-                toggle.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                toggle.Main.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
                 toggle.Main.BorderColor3 = window.theme.outlinecolor
                 toggle.Main.BorderSizePixel = 0
                 toggle.Main.Size = UDim2.fromOffset(8, 8)
