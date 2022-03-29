@@ -3079,7 +3079,7 @@ function library:CreateWindow(name, hidebutton)
                 seperator.main.BackgroundTransparency = 1
                 seperator.line = Instance.new("Frame", seperator.main)
                 seperator.line.Name = "Line"
-                seperator.line.ZIndex = 7
+                seperator.line.ZIndex = 8
                 seperator.line.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
                 seperator.line.BorderSizePixel = 0
                 seperator.line.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 26, 1)
