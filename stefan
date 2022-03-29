@@ -586,14 +586,14 @@ function library:CreateWindow(name, hidebutton)
             end)
             sector.LabelBackFrame = Instance.new("Frame", sector.Main)
             sector.LabelBackFrame.Name = "labelframe"
-            sector.LabelBackFrame.ZIndex = 0
+            sector.LabelBackFrame.ZIndex = 2
             sector.LabelBackFrame.Size = UDim2.fromOffset(sector.Label.Size.X.Offset, 10)
             sector.LabelBackFrame.BorderSizePixel = 0
             sector.LabelBackFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
             sector.LabelBackFrame.Position = UDim2.fromOffset(sector.Label.Position.X.Offset, sector.BlackOutline2.Position.Y.Offset)
             sector.Items = Instance.new("Frame", sector.Main)
             sector.Items.Name = "items"
-            sector.Items.ZIndex = 2
+            sector.Items.ZIndex = 0
             sector.Items.BackgroundTransparency = 1
             sector.Items.Size = UDim2.fromOffset(170, 140)
             sector.Items.AutomaticSize = Enum.AutomaticSize.Y
