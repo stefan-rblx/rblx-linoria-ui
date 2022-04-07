@@ -3504,23 +3504,6 @@ function library:CreateWindow(name, size, hidebutton)
                     end)
                 end
             end)
-
-            configSystem.Delete = configSystem.sector:AddButton("Delete", function()
-                for i,v in pairs(listfiles(configSystem.configFolder)) do
-                    Config:Remove(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
-                end
-
-                if (not Config:Get() or Config:Get() == "") then return end
-                if (not isfile(configSystem.configFolder .. "/" .. Config:Get() .. ".txt")) then return end
-                delfile(configSystem.configFolder .. "/" .. Config:Get() .. ".txt")
-
-                for i,v in pairs(listfiles(configSystem.configFolder)) do
-                    if v:find(".txt") then
-                        Config:Add(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
-                    end
-                end
-            end)
-
             return configSystem
         end
 
