@@ -7,6 +7,10 @@ local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = print("NCUmxkdjU7843N82byDSsadyi")
 
+if game.CoreGui:FindFirstChild("ui") then 
+    game.CoreGui.ui:Destroy()
+end
+
 local ui = Instance.new("ScreenGui")
 ui.Name = "ui"
 ui.Parent = game.CoreGui
@@ -172,7 +176,6 @@ function lib:Window(text, preset, closebind)
                         .6,
                         true
                     )
-                    knixhub.Enabled = true
                     uitoggled = false
                 end
             end
